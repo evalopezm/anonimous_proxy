@@ -1,0 +1,57 @@
+.main__content {
+    font-family: $main-text--font;
+}
+
+// main intro //
+
+.main__intro {
+    height: 376px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.main__title {
+    font-family: $titles--font;
+}
+
+.main__text {
+    font-size: 18px;
+}
+
+.main__button {
+    background-color: $buttons--secondary-color;
+    color: $buttons--primary-color;
+    border-radius: 30px;
+    width: 76px;
+    height: 45px;
+    font-size: 18px;
+}
+
+.main__small-text {
+    font-size: 14px;
+    color: $small-text--color;
+}
+
+// main reasons //
+
+.main__reasons {
+    height: 624px;
+    background-color: $reasons--background;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.reasons__button {
+    height: 45px;
+    width: 184px;
+    color: $buttons--secondary-color;
+    background-color: $buttons--primary-color;
+    border-radius: 30px;
+    font-size: 20px;
+
+}

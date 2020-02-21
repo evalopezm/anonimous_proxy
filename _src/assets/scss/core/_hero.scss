@@ -4,7 +4,6 @@
     justify-content: center;
    
     background-image: url(../images/cover.jpg);
-    width: 320px;
     height: 568px;
     color: white;
     font-family: "roboto slab";
@@ -24,7 +23,7 @@
 }
 
 .hero__arrow {
-    background-color: $buttons--primary-background;
+    background-color: $buttons--secondary-color;
     width: 45px;
     height: 45px;
     border-radius: 50px;
