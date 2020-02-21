@@ -1,26 +1,23 @@
 .hero {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-   
+    align-items: center;
+    padding-top: 284px;
+    width: 320px;
     background-image: url(../images/cover.jpg);
+    background-position: top;
     width: 320px;
     height: 568px;
     color: white;
     font-family: "roboto slab";
 }
 
-.hamburguer {
-    background-color: $hamburguer--background;
-
-    position: fixed;
-    transform: translate(0px, -268px);
-}
 
 .hero__text {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 10px;
 }
 
 .hero__arrow {
@@ -28,9 +25,7 @@
     width: 45px;
     height: 45px;
     border-radius: 50px;
-
-    
-    transform: translate(0px, 100px);
+    margin-top: 45px;
     display: flex;
     justify-content: center;
     align-items: center;
