@@ -1,16 +1,15 @@
 .main__content {
     font-family: $main-text--font;
+    width: 320px;
 }
 
 // main intro //
 
 .main__intro {
     height: 376px;
-    padding: 15px;
+    padding: 30px 0px 45px 15px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: flex-start;
 }
 
 .main__title {
@@ -19,6 +18,11 @@
 
 .main__text {
     font-size: 18px;
+    padding-top: 15px;
+    padding-bottom: 30px;
+    font-size: 18px;
+    color: #4a4a4a;
+    
 }
 
 .main__button {
@@ -28,6 +32,7 @@
     width: 76px;
     height: 45px;
     font-size: 18px;
+    border: solid 2px $buttons--primary-color;
 }
 
 .main__small-text {
@@ -38,15 +43,54 @@
 // main reasons //
 
 .main__reasons {
+    width: 320px;
     height: 624px;
     background-color: $reasons--background;
+    padding: 0px 0px 0px 0px;
+    padding-top: 30px;
+    padding-bottom: 60px; 
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-between;
+    align-items: center;  
+    // display: grid;
+    // grid-template-columns: 1fr;
+    // grid-template-rows: 5, 1fr;
 }
 
+.reasons__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+// .reasons__title {
+//     // grid-column: 1/4; 
+//     // grid-row: 1/2;
+// }
+
+// .reasons__text1 {
+//     // grid-column: 1/2;
+//     // grid-row: 2/3;
+// }
+
+// .reasons__text2 {
+//     grid-column: 2/3;
+//     grid-row: 2/3;
+// }
+
+// .reasons__text3 {
+//     grid-column: 3/4;
+//     grid-row: 2/3;
+// }
+
 .reasons__button {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    
     height: 45px;
     width: 184px;
     color: $buttons--secondary-color;

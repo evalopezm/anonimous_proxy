@@ -1,35 +1,36 @@
 @import "core/_reset.scss";
 @import "core/variables";
-@import "core/hero";
+@import "core/hamburguer";
+@import "core/hero.scss";
 @import "core/maincontent";
 
 
 
-// to delete //
+// // to delete //
 
-.hero {
-    border: solid 3px red;
-}
+// // .hero {
+// //     border: solid 3px red;
+// }
 
-.main__content {
-    border: solid 3px blue;
-}
+// .main__content {
+//     border: solid 3px blue;
+// }
 
 .footer {
     border: solid 3px green;
 }
 
-.hamburguer {
-    border: solid 3px violet;
-}
+// .hamburguer {
+//     border: solid 3px violet;
+// }
 
-.main__intro {
-    border: solid 3px purple;
-}
+// .main__intro {
+//     border: solid 3px purple;
+// }
 
-.main__reasons {
-    border: solid 3px rgb(230, 230, 82);
-}
+// .main__reasons {
+//     border: solid 3px rgb(230, 230, 82);
+// }
 
 .copy {
     border: solid 3px #666666;
