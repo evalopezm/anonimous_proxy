@@ -25,14 +25,21 @@
     
 }
 
-.main__button {
+.main__go-button {
     background-color: $buttons--secondary-color;
     color: $buttons--primary-color;
+    border: solid 2px $buttons--primary-color;
     border-radius: 30px;
     width: 76px;
     height: 45px;
     font-size: 18px;
-    border: solid 2px $buttons--primary-color;
+    transition: color ease 1s, border-color ease 2s, background-color ease 2s;
+    
+    &:hover {
+        background-color: $buttons--primary-color;
+        color: $buttons--secondary-color;
+        border: solid 2px $buttons--secondary-color;
+    }
 }
 
 .main__small-text {
@@ -67,6 +74,22 @@
     margin-right: 70px;
 }
 
+.reasons__button {
+    height: 45px;
+    width: 184px;
+    color: $buttons--secondary-color;
+    background-color: $buttons--primary-color;
+    border-radius: 30px;
+    font-size: 20px;
+    transition: color ease 1s, border-color ease 2s, background-color ease 2s;
+
+    &:hover {
+        background-color: $buttons--secondary-color;
+        color: $buttons--primary-color;
+        border: solid 2px $buttons--primary-color;
+      }
+}
+
 // .reasons__title {
 //     // grid-column: 1/4; 
 //     // grid-row: 1/2;
@@ -86,16 +109,7 @@
 //     grid-column: 3/4;
 //     grid-row: 2/3;
 // }
-
-.reasons__button {
-    grid-column: 2/3;
-    grid-row: 3/4;
-    
-    height: 45px;
-    width: 184px;
-    color: $buttons--secondary-color;
-    background-color: $buttons--primary-color;
-    border-radius: 30px;
-    font-size: 20px;
-
-}
+// .reasons__button {
+//     grid-column: 2/3;
+//     grid-row: 3/4;
+// }
