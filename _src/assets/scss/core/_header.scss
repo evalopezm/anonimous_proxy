@@ -20,6 +20,11 @@
     padding-top: 10px;
 }
 
+.hero__title {
+    text-transform: uppercase;
+    font-size: 42px;
+}
+
 .hero__arrow {
     background-color: $buttons--secondary-color;
     width: 45px;
