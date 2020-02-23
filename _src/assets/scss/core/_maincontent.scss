@@ -3,47 +3,50 @@
     width: 320px;
 }
 
+.main__title {
+    font-family: $titles--font;
+    font-weight: bold;
+    line-height: 30px;
+}
+
 // main intro //
 
 .main__intro {
     height: 376px;
-    padding: 30px 0px 45px 15px;
+    padding: 30px 15px 45px 15px;
     display: flex;
     flex-direction: column;
 }
 
-.main__title {
-    font-family: $titles--font;
+.main-intro__small-text {
+    font-size: 14px;
+    color: $small-text--color;
+    height: 30px;
 }
 
-.main__text {
+.main-intro__text {
     font-size: 18px;
     padding-top: 15px;
-    padding-bottom: 30px;
-    font-size: 18px;
-    color: #4a4a4a;
-    
+    color: $main-intro__text-color; 
+    height: 150px;
+    line-height: 30px;
 }
 
-.main__button {
+.main-intro__button {
     background-color: $buttons--secondary-color;
     color: $buttons--primary-color;
+    border: solid 2px $buttons--primary-color;
     border-radius: 30px;
     width: 76px;
     height: 45px;
-    font-size: 18px;
-    border: solid 2px $buttons--primary-color;
+    margin-top: 30px;
+    font-size: 18px;   
 }
 
-.main__small-text {
-    font-size: 14px;
-    color: $small-text--color;
-}
 
 // main reasons //
 
 .main__reasons {
-    width: 320px;
     height: 624px;
     background-color: $reasons--background;
     padding: 0px 0px 0px 0px;
@@ -65,6 +68,8 @@
     text-align: center;
     margin-left: 70px;
     margin-right: 70px;
+    line-height: 30px;
+    font-size: 18px;
 }
 
 // .reasons__title {
@@ -87,15 +92,15 @@
 //     grid-row: 2/3;
 // }
 
-.reasons__button {
-    grid-column: 2/3;
-    grid-row: 3/4;
-    
+.reasons__button {    
     height: 45px;
     width: 184px;
     color: $buttons--secondary-color;
     background-color: $buttons--primary-color;
     border-radius: 30px;
     font-size: 20px;
+
+    // grid-column: 2/3;
+    // grid-row: 3/4;
 
 }
