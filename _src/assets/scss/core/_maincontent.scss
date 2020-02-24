@@ -154,6 +154,7 @@
 .main__reasons-button {
     height: 45px;
     width: 184px;
+    text-transform: capitalize;
     color: $buttons--secondary-color;
     background-color: $buttons--primary-color;
     border-radius: 22.5px;
