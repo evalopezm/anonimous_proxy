@@ -1,5 +1,4 @@
 .footer {
-    width: 320px;
     height: 465px;
     background-color: $footer--background;
     font-family: $main-text--font;
@@ -10,6 +9,18 @@
     align-items: center;
     padding-top: 60px;
     padding-bottom: 45px;
+
+    @media all and (min-width:768px) {
+        height: 240px;
+        flex-direction: row;
+        padding-top: 45px;
+        padding-bottom: 0;
+        padding: 45px 39px 45px 39px;
+    }
+
+    @media all and (min-width:1200px) {
+        padding: 45px 370px 45px 370px;
+    }
 }
 
 .footer__arrow {
@@ -22,11 +33,25 @@
     align-items: center;
     position: absolute;
     transform: translate(0, -81px);
+
+    @media all and (min-width:768px) {
+        transform: translate(0, -122px);
+        margin-left: 43%;
+    }
+
+    @media all and (min-width:1200px) {
+        transform: translate(0, -122px);
+        margin-left: 18%;
+    }
 }
 
 .footer__list {
     list-style: none;
     text-align: center;
+
+    @media all and (min-width:768px) {
+        text-align: start;   
+    }
 }
 
 .footer__sections-list {
@@ -34,6 +59,14 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    @media all and (min-width:768px) {
+        width: 210px; 
+    }
+
+    @media all and (min-width:1200px) {
+        width: 161px; 
+    }
 }
 
 .footer__links-list {
@@ -41,6 +74,15 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    @media all and (min-width:768px) {
+        margin-bottom: 60px;
+        width: 210px;
+    }
+
+    @media all and (min-width:1200px) {
+        width: 159px;
+    }
 }
 
 .footer__link {
@@ -52,6 +94,18 @@
 .footer__copy {
     display: block;
     text-align: center;
+
+    @media all and (min-width:768px) {
+        order: -1;
+        text-align: start;
+        margin-bottom: 97px;
+        line-height: 30px;
+        width: 210px;
+    }
+
+    @media all and (min-width:1200px) {
+        width: 159px;
+    }
 }
 
 .footer__heart {
