@@ -1,12 +1,30 @@
 .main__content {
     font-family: $main-text--font;
-    width: 320px;
 }
 
 .main__title {
     font-family: $titles--font;
     font-weight: bold;
     line-height: 30px;
+    font-size: 18px;
+
+    @media all and (min-width:768px) {
+        font-size: 24px;
+        margin-bottom: 14px;
+    }
+}
+
+.main__section-title {
+    font-size: 24px;
+
+    @media all and (min-width:768px) {
+        font-size: 26px;
+        line-height: 45px;
+    }
+
+    @media all and (min-width:1200px) {
+        font-size: 32px;
+    }
 }
 
 // main intro //
@@ -16,36 +34,68 @@
     padding: 30px 15px 45px 15px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+
+    @media all and (min-width:768px) {
+        height: 330px;
+        padding: 30px 39px 60px 39px;
+    }
+
+    @media all and (min-width:1200px) {
+        height: 360px;
+        padding: 60px 275px 60px 275px;
+    }
 }
 
 .main-intro__small-text {
     font-size: 14px;
     color: $small-text--color;
     height: 30px;
+
+    @media all and (min-width:1200px) {
+        font-size: 16px;
+    }
 }
 
 .main-intro__text {
     font-size: 18px;
-    padding-top: 15px;
+    margin-top: 15px;
     color: $main-intro__text-color; 
     height: 150px;
     line-height: 30px;
+
+    @media all and (min-width:768px) {
+        font-size: 20px;
+        margin-top: 30px;
+    }
 }
 
 .main__go-button {
     background-color: $buttons--secondary-color;
     color: $buttons--primary-color;
     border: solid 2px $buttons--primary-color;
-    border-radius: 30px;
+    border-radius: 22.5px;
     width: 76px;
     height: 45px;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 18px;
     transition: color ease 1s, border-color ease 2s, background-color ease 2s;
     
     &:hover {
         background-color: $buttons--primary-color;
         color: $buttons--secondary-color;
-        border: solid 2px $buttons--secondary-color;
+    }
+    @media all and (min-width:768px) {
+        font-size: 20px;
+        line-height: 45px;
+        width: 91px;
+    }
+
+    @media all and (min-width:1200px) {
+        width: 160px;
     }
 }
 
@@ -62,10 +112,29 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;  
-    // display: grid;
-    // grid-template-columns: 1fr;
-    // grid-template-rows: 5, 1fr;
+
+    @media all and (min-width:768px) {
+        height: 397px;
+        display: grid;
+        justify-items: center;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;  
+    }
+
+    @media all and (min-width:1200px) {
+        height: 427px; 
+        padding-top: 60px;
+    }
 }
+
+.main__reasons-title {
+    @media all and (min-width:768px) {
+        grid-column: 1 / 4;
+        align-self: flex-start;
+        margin-bottom: 45px;
+    }
+}    
+
 
 .reasons__text {
     display: flex;
@@ -76,14 +145,18 @@
     margin-right: 70px;
     line-height: 30px;
     font-size: 18px;
+
+    @media all and (min-width:768px) {
+        font-size: 20px; 
+    }
 }
 
-.reasons__button {
+.main__reasons-button {
     height: 45px;
     width: 184px;
     color: $buttons--secondary-color;
     background-color: $buttons--primary-color;
-    border-radius: 30px;
+    border-radius: 22.5px;
     font-size: 20px;
     transition: color ease 1s, border-color ease 2s, background-color ease 2s;
 
@@ -91,29 +164,17 @@
         background-color: $buttons--secondary-color;
         color: $buttons--primary-color;
         border: solid 2px $buttons--primary-color;
-      }
+    }
+
+    @media all and (min-width:768px) {
+        width: 210px;
+        grid-column: 1 / 4;
+        justify-content: center;
+        align-self: flex-end;
+    }
+
+    @media all and (min-width:1200px) {
+        width: 255px;
+    }
 }
 
-// .reasons__title {
-//     // grid-column: 1/4; 
-//     // grid-row: 1/2;
-// }
-
-// .reasons__text1 {
-//     // grid-column: 1/2;
-//     // grid-row: 2/3;
-// }
-
-// .reasons__text2 {
-//     grid-column: 2/3;
-//     grid-row: 2/3;
-// }
-
-// .reasons__text3 {
-//     grid-column: 3/4;
-//     grid-row: 2/3;
-// }
-// .reasons__button {
-//     grid-column: 2/3;
-//     grid-row: 3/4;
-// }
