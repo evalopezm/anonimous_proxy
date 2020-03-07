@@ -13,6 +13,10 @@
         height: 768px;
         padding-top: 384px;
     }
+
+    @media all and (max-height: 1000px){
+        height: 800px;
+    }
 }
 
 .hero__title {
